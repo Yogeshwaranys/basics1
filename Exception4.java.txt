@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        try{
+            int a=12/0;
+        }
+        catch(ArithmeticException e){
+            System.out.println("Caught AirthmeticException");
+        }
+        try{
+            int arr[]=null;
+            System.out.println(arr[0]);
+        }
+        
+        catch(NullPointerException e){
+             System.out.println(
+                "Caught NullPointerException");
+            
+        }
+        finally{
+            System.out.println("display");
+        }
+        System.out.println("hello world");
+    }
+}
